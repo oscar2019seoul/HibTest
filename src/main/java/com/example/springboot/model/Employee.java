@@ -28,14 +28,10 @@ public class Employee {
 	@Column(name = "last_name")
 	private String lastName;
 
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
 	@Column(name = "email")
 	private String email;
+
+	public String toStr2(){
+		return( ""+firstName+" / "+lastName+" / "+email);
+	}
 }
