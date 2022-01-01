@@ -8,19 +8,15 @@ import javax.persistence.Table;
 
 import javax.persistence.Id;
 
-import lombok.Data;
 
-@Data
+import lombok.Setter;
+import lombok.Getter;
+
+@Getter
+@Setter
 @Entity
 @Table(name = "employees")
 public class Employee {
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

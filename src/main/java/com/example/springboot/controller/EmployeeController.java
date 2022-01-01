@@ -25,7 +25,7 @@ public class EmployeeController {
 	public ResponseEntity<Employee> saveEmployee(@RequestBody Employee employee){
 		System.out.println( "***");
 		
-		System.out.println( employee.getFirstName());
+//		System.out.println( employee.getFirstName());
 		return new ResponseEntity<Employee>(employeeService.saveEmployee(employee), HttpStatus.CREATED);
 	}
 	
